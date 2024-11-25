@@ -50,7 +50,8 @@ public class UserController {
 	{
 		
         User us = usi.viewUserById(id, key);
-		
+		System.out.println("ok");
+
 		return new ResponseEntity<User>(us,HttpStatus.OK);
 	}
 	
@@ -63,9 +64,8 @@ public class UserController {
 		
 		return new ResponseEntity<List<User>>(list,HttpStatus.OK);
 	}
-	
-	
-	
+
+
 	
 	
 	
